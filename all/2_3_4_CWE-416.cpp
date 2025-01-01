@@ -1,0 +1,23 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+void *malloc_ptr(size_t size)
+{
+    void *ptr = malloc(size);
+    if (ptr == NULL) {
+        fprintf(stderr, "malloc_ptr: malloc failed\n");
+        exit(1);
+    }
+    return ptr;
+}
+
+void free_ptr(void *ptr)
+{
+    free(ptr);
+}
+
+int main()
+{
+    
+    return 0;
+}
